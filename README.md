@@ -1,11 +1,12 @@
 # MITM TOOLS INSTALLER
 
 About:
-Setup mitmproxy and arpspoof environment
+Setup mitmproxy and arpspoof environment for raspberry pi 3.18 wheezy
+debian version 7.8
 
-How to use:
+How to use for raspberry pi:
 
- ``wget https://raw.githubusercontent.com/hshintaro575/mitm/master/mitmInstaller.sh; sudo ./mitmInstaller.sh``
+ ``wget https://raw.githubusercontent.com/hshintaro575/mitm/master/mitmInstaller.sh; sudo sh ./mitmInstaller.sh``
 
 
 It worked!
