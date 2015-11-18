@@ -10,3 +10,7 @@ How to use:
 It worked!
 
 # EXEC MITM
+About:
+
+How to use:
+``wget https://github.com/hshintaro575/mitm/blob/master/auto-mitm.sh; sudo ./auto-mitm.sh``
