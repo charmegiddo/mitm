@@ -22,7 +22,7 @@ echo "Require Environment: RASPBIAN WHEEZY ver 3.18, Date: May 2015
 
 Ver=`uname -a`
 
-if [ $(echo $text | grep -e 'Linux raspberrypi 3.18') ]; then
+if [ $(echo $Ver | grep -e 'Linux raspberrypi 3.18') ]; then
     echo "[OK]$Ver"
 else
     echo "[Unknown OS]$Ver
