@@ -20,6 +20,15 @@ echo "#####################################################################
 echo "Require Environment: RASPBIAN WHEEZY ver 3.18, Date: May 2015
 "
 
+Ver=`uname -a`
+
+if [ $(echo $text | grep -e 'Linux raspberrypi 3.18') ]; then
+    echo "[OK]$Ver"
+else
+    echo "[Unknown OS]$Ver
+may not be able to install."
+fi
+
 while true
 do
     echo -n "python-pip, python-dev, libxml2-dev, libxslt-dev, 
