@@ -20,12 +20,12 @@ echo "#####################################################################
 echo "Require Environment: RASPBIAN WHEEZY ver 3.18, Date: May 2015
 "
 
-Ver=`uname -a`
+osver=`uname -a | grep -e 'Linux raspberrypi 3.18'`
 
-if [ $(echo $Ver | grep -e 'Linux raspberrypi 3.18') ]; then
-    echo "[OK]$Ver"
+if [ -n "${osver}" ]; then
+   echo "[OK]$osver"
 else
-    echo "[Unknown OS]$Ver
+    echo "[Unknown OS]$osver
 may not be able to install."
 fi
 
