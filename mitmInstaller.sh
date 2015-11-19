@@ -17,7 +17,7 @@ echo "#####################################################################
 ###   #     #  #####     #    #     # ####### ####### ####### #     #
 #####################################################################"
 
-echo "Require Environment: RASPBIAN WHEEZY ver 3.18, Date: May 2015"
+echo "Require Environment: RASPBIAN JESSIE ver 4.x"
 
 osver=`uname -a | grep -e 'Linux raspberrypi 4.'`
 
