@@ -19,7 +19,7 @@ echo "#####################################################################
 
 echo "Require Environment: RASPBIAN WHEEZY ver 3.18, Date: May 2015"
 
-osver=`uname -a | grep -e 'Linux raspberrypi 3.18'`
+osver=`uname -a | grep -e 'Linux raspberrypi 4.'`
 
 if [ -n "${osver}" ]; then
    echo "[OK]$osver
