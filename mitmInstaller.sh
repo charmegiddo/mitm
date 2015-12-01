@@ -48,15 +48,15 @@ done
 sudo apt-get -y update 
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
-#wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-#chmod +x get-pip.py
-#sudo ./get-pip.py
-sudo apt-get -y install python-pip
+#sudo apt-get -y install python-pip
 sudo apt-get install -y python-dev libxml2-dev libxslt-dev libffi-dev python-lxml
 sudo apt-get -y install libjpeg-dev libfreetype6 libfreetype6-dev zlib1g-dev
-sudo apt-get remove python-pyasn1 
+sudo apt-get -y remove python-pyasn1 
+wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+chmod +x get-pip.py
+sudo ./get-pip.py
 sudo pip install pyasn1
-sudo apt-get install -y dsniff
+sudo apt-get -y install dsniff
 sudo pip install mitmproxy
 
 echo "Done."

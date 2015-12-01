@@ -16,4 +16,4 @@ About:
 
 How to use:
 
-``wget https://github.com/hshintaro575/mitm/blob/master/auto-mitm.sh; sudo ./auto-mitm.sh``
+``https://raw.githubusercontent.com/hshintaro575/mitm/master/auto-mitm.sh; sudo sh auto-mitm.sh``
