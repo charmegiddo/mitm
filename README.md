@@ -2,7 +2,6 @@
 
 About:
 Setup mitmproxy and arpspoof for raspberry pi 4.1.7+
-debian version 7.8
 
 How to use for raspberry pi:
 
