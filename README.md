@@ -8,8 +8,7 @@ How to use for raspberry pi:
  ``wget https://raw.githubusercontent.com/hshintaro575/mitm/master/mitmInstaller.sh; sudo sh ./mitmInstaller.sh``
 
 
-# Easy MITM
-About:
+# EASY MITM INSTALLER
 
 How to use:
 
