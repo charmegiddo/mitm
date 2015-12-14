@@ -54,7 +54,7 @@ echo "1) Default MITM Attack mode: Transparent Proxying
 2) Check Communication mode: SSL/TLS handshake eeror check and saving all packet
 3) Specific analysis mode: Analysis Specific Domain
 4) Transparent mode: Does not run the mitmproxy
-Choose MITM Version [1, 2, 3]:"
+Choose MITM Version [1, 2, 3, 4]:"
 read mVer
 echo "Started..."
 
