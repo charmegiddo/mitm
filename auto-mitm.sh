@@ -71,8 +71,8 @@ fi
 if [ "${mVer}" = '2' ]; then
     filename="dump_"`date '+%F-%T'`".log"
     echo "Save file name: $filename"
-    mitmdump -T --host -e > $filename &
-    tail -f -n 100 $filename | grep 400 -B 5 -n
+    mitmdump -T --host > $filename &
+    tail -f -n 100 $filename | grep "failed" -B 5 -n
 fi
 
 if [ "${mVer}" = '3' ]; then
@@ -80,7 +80,7 @@ if [ "${mVer}" = '3' ]; then
     read domain
     filename="dump_"`date '+%F-%T'`".log"
     echo "Save file name: $filename"
-    mitmdump -T --host -e > $filename &
+    mitmdump -T --host > $filename &
     tail -f -n 100 $filename | grep $domain -6 -n
     echo '3'
 fi
